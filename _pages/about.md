@@ -3,6 +3,8 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+I'm **Sanaz**, a passionate and driven **software engineer** with strong experience in **backend development**, **distributed systems**, and **scalable architectures**. Over the past few years, I've worked on challenging projects in **e-commerce and logistics**, building reliable systems, solving complex technical issues, and improving stability through monitoring tools, test automation, and cross-team collaboration.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+What excites me most is the chance to learn new **technologies, expand my skills,** and step into new environments where I can grow as both an engineer and a problem-solver. At the same time, I’m confident in the expertise I’ve built — from owning critical projects that improved system health and reduced disaster detection times from hours to minutes, to leading initiatives that influenced entire teams to adopt better engineering practices.
+
+I thrive in dynamic, international environments where collaboration and innovation meet, and I’m motivated by the opportunity to not only deliver high-quality solutions but also inspire and support others in the process. For me, every project is a chance to push boundaries, take ownership, and contribute to building systems that make a real difference.

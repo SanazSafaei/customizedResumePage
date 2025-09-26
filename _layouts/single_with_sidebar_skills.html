@@ -1,0 +1,163 @@
+---
+layout: single
+---
+
+<div class="page__inner-wrap">
+  <section class="page__content" itemprop="text">
+    {{ content }}
+  </section>
+</div>
+
+<!-- Skills section positioned in sidebar -->
+<div class="author__skills">
+  <h3 class="author__skills-title">Technical Skills</h3>
+  
+  <div class="skill-group">
+    <h4 class="skill-group-title">Programming Languages</h4>
+    <div class="skill-list">
+      <span class="skill-item">Python</span>
+      <span class="skill-item">PHP</span>
+      <span class="skill-item">Java</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <h4 class="skill-group-title">Frameworks & Libraries </h4>
+    <div class="skill-list">
+      <span class="skill-item">Symfony</span>
+      <span class="skill-item">Django</span>
+      <span class="skill-item">FastAPI</span>
+      <span class="skill-item">Spring Boot</span>
+      <span class="skill-item">GraphQL</span>
+      <span class="skill-item">PHPUnit</span>
+      <span class="skill-item">PHPStan</span>
+      <span class="skill-item">NumPy</span>
+      <span class="skill-item">pandas</span>
+      <span class="skill-item">Pytest</span>
+      <span class="skill-item">Robot Framework</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <h4 class="skill-group-title">Databases</h4>
+    <div class="skill-list">
+      <span class="skill-item">MySQL</span>
+      <span class="skill-item">MongoDB</span>
+      <span class="skill-item">PostgreSQL</span>
+      <span class="skill-item">Redis</span>
+      <span class="skill-item">SQLAlchemy</span>
+      <span class="skill-item">InfluxDB</span>
+      <span class="skill-item">Prometheus</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <h4 class="skill-group-title">Tools & Technologies</h4>
+    <div class="skill-list">
+      <span class="skill-item">AWS</span>
+      <span class="skill-item">Uniswap</span>
+      <span class="skill-item">Docker</span>
+      <span class="skill-item">Memcached</span>
+      <span class="skill-item">Kafka</span>
+      <span class="skill-item">Grafana</span>
+      <span class="skill-item">Kibana</span>
+      <span class="skill-item">APISIX</span>
+      <span class="skill-item">Swagger</span>
+      <span class="skill-item">OAuth2</span>
+      <span class="skill-item">Jenkins</span>
+      <span class="skill-item">Git</span>
+      <span class="skill-item">Linux</span>
+      <span class="skill-item">Jira</span>
+      <span class="skill-item">Assembla</span>
+      <span class="skill-item">RESTful APIs</span>
+      <span class="skill-item">Microservices</span>
+      <span class="skill-item">System Design</span>
+      <span class="skill-item">CI/CD</span>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Author Skills - Positioned in sidebar */
+.author__skills {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  margin-right: -200px;
+  padding-left: 1em;
+  z-index: 10;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+@media (min-width: 80em) {
+  .author__skills {
+    width: 300px;
+    margin-right: -300px;
+  }
+}
+
+.author__skills-title {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+
+.skill-group {
+  margin-bottom: 15px;
+}
+
+.skill-group:last-child {
+  margin-bottom: 0;
+}
+
+.skill-group-title {
+  font-size: 0.8em;
+  color: #666;
+  margin-bottom: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 0;
+}
+
+.skill-item {
+  display: inline-block;
+  padding: 3px 6px;
+  font-size: 0.75em;
+  color: #333;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+
+/* Hide on mobile */
+@media (max-width: 64em) {
+  .author__skills {
+    display: none;
+  }
+}
+
+/* Responsive Design for larger screens */
+@media (min-width: 64em) and (max-width: 80em) {
+  .author__skills {
+    width: 200px;
+    margin-right: -200px;
+  }
+}
+</style>
