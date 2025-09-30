@@ -20,12 +20,5 @@
     <priority>0.8</priority>
   </url>
   
-  <!-- 404 Page (optional, but good for completeness) -->
-  <url>
-    <loc>https://safaei.com/404.html</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
   
 </urlset>
