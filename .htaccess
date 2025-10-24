@@ -1,33 +1,40 @@
-# Force HTTPS
+# Redirect safaei.me to www.safaei.me
 RewriteEngine On
+
+# Force HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Force non-www
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} ^safaei\.me$ [NC]
+RewriteRule ^(.*)$ https://www.safaei.me/$1 [R=301,L]
 
-# Handle common 404 errors
-RewriteRule ^home/?$ / [R=301,L]
-RewriteRule ^cdn-cgi/l/email-protection/?$ / [R=301,L]
-RewriteRule ^naLogImpressions/?$ / [R=301,L]
-
-# Handle Jekyll feed.xml redirect
-RewriteRule ^feed\.xml$ /feed.xml [L]
-
-# Security headers
-Header always set X-Content-Type-Options nosniff
-Header always set X-Frame-Options DENY
-Header always set X-XSS-Protection "1; mode=block"
-Header always set Referrer-Policy "strict-origin-when-cross-origin"
-Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+# Redirect www HTTP to HTTPS
+RewriteCond %{HTTP_HOST} ^www\.safaei\.me$ [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.safaei.me/$1 [R=301,L]
 
 # Cache control for static assets
-<FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg)$">
-    Header set Cache-Control "max-age=31536000, public"
-</FilesMatch>
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
 
-# Cache control for HTML
-<FilesMatch "\.(html|htm)$">
-    Header set Cache-Control "max-age=3600, public"
-</FilesMatch>
+# Gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
