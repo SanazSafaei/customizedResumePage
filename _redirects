@@ -1,14 +1,16 @@
 # Redirects for safaei.me to www.safaei.me
 # This file is used by Netlify, but can be adapted for other hosting providers
 
-# Redirect root domain to www subdomain
-https://safaei.me/* https://www.safaei.me/:splat 301!
+# Redirect root domain (HTTP) to www HTTPS
 http://safaei.me/* https://www.safaei.me/:splat 301!
+
+# Redirect root domain (HTTPS) to www HTTPS
+https://safaei.me/* https://www.safaei.me/:splat 301!
 
 # Redirect www HTTP to HTTPS
 http://www.safaei.me/* https://www.safaei.me/:splat 301!
 
-# Specific redirects for common paths
-https://safaei.me/feed.xml https://www.safaei.me/feed.xml 301!
-https://safaei.me/sitemap.xml https://www.safaei.me/sitemap.xml 301!
-https://safaei.me/robots.txt https://www.safaei.me/robots.txt 301!
+# Redirect root paths (without trailing slash)
+http://safaei.me https://www.safaei.me 301!
+https://safaei.me https://www.safaei.me 301!
+http://www.safaei.me https://www.safaei.me 301!
