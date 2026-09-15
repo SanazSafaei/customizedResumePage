@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Sanaz Safaei
-email: safaei.sanaz@gmail.com
+email: sanaz.safaei@studenti.polito.it
 description: >- # this means to ignore newlines until "baseurl:"
   Senior Software Engineer with 4+ years experience in PHP, AWS, Kubernetes, and scalable e-commerce solutions. Currently at Digikala Group building systems for 150K+ daily users.
 github_username: SanazSafaei
@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Sanaz Safaei"
   avatar : "/assets/images/bio-photo-2.jpg"
-  bio    : "I'm a software engineer with more than 4 years of experience in building impactful products. I'm passionate about building scalable and efficient systems. I'm currently working at Digikala Group as a Senior Software Engineer."
+  bio    : "I'm a software engineer with more than 4 years of experience in building impactful products. I'm passionate about building scalable and efficient systems. I'm currently working at Digi..."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -73,7 +73,7 @@ author:
       url: "https://linkedin.com/in/sanaz-safaei"
     - label: "Email"
       icon: "fab fa-fw fa-envelope"
-      url: "mailto:sanazsafaei97@gmail.com"
+      url: "mailto:sanaz.safaei@studenti.polito.it"
 
 footer:
   links:
@@ -88,7 +88,7 @@ footer:
       url: "https://linkedin.com/in/sanaz-safaei"
     - label: "Email"
       icon: "fab fa-fw fa-envelope"
-      url: "mailto:sanazsafaei97@gmail.com"
+      url: "mailto:sanaz.safaei@studenti.polito.it"
 
 defaults:
   # _pages
