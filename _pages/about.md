@@ -1,8 +1,7 @@
 ---
 permalink: /about/
-title: "About Sanaz Safaei - Senior Software Engineer | PHP, AWS, Kubernetes Expert"
-description: "Learn more about Sanaz Safaei, a passionate Senior Software Engineer with expertise in backend development, distributed systems, and scalable architectures. Currently working at Digikala Group."
-keywords: "about Sanaz Safaei, software engineer profile, backend developer, PHP expert, AWS specialist, Kubernetes, scalable systems, Digikala engineer"
+title: "About Sanaz Safaei - Backend Software Engineer"
+description: "About Sanaz Safaei, a Backend Software Engineer with nearly 6 years of experience in Java, Spring Boot, PHP, distributed systems, and scalable architectures. M.Sc. student at Politecnico di Torino."
 canonical_url: "https://www.safaei.me/about/"
 ---
 
