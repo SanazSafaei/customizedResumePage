@@ -128,10 +128,10 @@ canonical_url: "https://www.safaei.me/"
     </div>
     <ul class="job-achievements">
       <li><strong>Legacy PHP to Java Migration:</strong> Designed and built a new <strong>Java/Spring Boot</strong> service using <strong>hexagonal architecture</strong>
-        to replace legacy PHP functionality, handling <strong>6,000+ requests per second</strong> at <strong>p99 latency under 300 ms</strong>.</li>
+        to replace legacy PHP functionality, handling <strong>6,000+ requests per second</strong> at <strong>p99 latency under 100 ms</strong>.</li>
       <li><strong>Zero-Downtime Pricing Migration:</strong> Owned the end-to-end migration of the Cart Service pricing engine to a new microservice
         through a staged, feature-flagged rollout with <strong>zero downtime</strong>.</li>
-      <li><strong>Database Storage Optimization:</strong> Reduced the Cart Service <strong>MySQL</strong> storage from <strong>1.7 TB to 600 GB (65% less)</strong>
+      <li><strong>Database Storage Optimization:</strong> Reduced the Cart Service <strong>MySQL</strong> storage from <strong>1.7 TB to 600 GB per node</strong> (<strong>13 TB</strong> cluster in total)
         by removing redundant writes.</li>
       <li><strong>API Gateway &amp; Security:</strong> Moved the Cart Service behind the <strong>APISIX API Gateway</strong>, redesigned authentication,
         and closed all open security findings, from container hardening to credential encryption.</li>
